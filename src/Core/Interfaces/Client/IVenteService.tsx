@@ -1,10 +1,6 @@
-import { IPrixFabrication } from './IPrixFabrication';
-import { ITaxe } from './ITaxe';
+import { IServiceVente } from '../Others/IServiceVente';
 
-export interface IVenteService {
+export interface IVenteService extends IServiceVente {
     status: boolean,
-    description_service: string,
-    prix_vente: number,
-    taxes: ITaxe[],
-    prix_fabrication: IPrixFabrication[],
+    date_vente: Date,
 }

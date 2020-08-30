@@ -1,5 +1,6 @@
-export interface IProspectionService {
-    status: boolean,
-    texte: string,
-    date_envoie: Date,
+import { IServiceProspection } from '../Others/IServiceProspection';
+
+export interface IProspectionService extends IServiceProspection{
+  date_envoie: Date,
+  status: boolean,
 }

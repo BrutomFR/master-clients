@@ -1,4 +1,4 @@
-import { IService } from "./Client/IService";
+import { IService } from './Client/IService';
 
 export interface IClient {
   date_creation: Date;
@@ -7,5 +7,5 @@ export interface IClient {
   email: string;
   adresse: string;
   phone_number: string;
-  services: IService[];
+  services_client: IService[];
 }

@@ -17,7 +17,7 @@ const Dashboard: FunctionComponent<IDashboard> = (props) => {
 
   return (
     <div>
-      <div>Nouveau composant</div>
+      
     </div>
   );
 };

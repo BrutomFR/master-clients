@@ -6,6 +6,10 @@ App {
   font-family: "Rubik";
   src: url(./Fonts/Rubik-Regular.ttf);
 }
+@font-face {
+  font-family: "Gabriola";
+  src: url(./Fonts/Gabriola.woff);
+}
 body {
   font-family: "Rubik";
 }
