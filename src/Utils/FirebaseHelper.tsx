@@ -5,14 +5,14 @@ import "firebase/firestore";
 // INITIALIZE
 export default firebase
   .initializeApp({
-    apiKey: "AIzaSyCZZtKGf_nW4bJ_Wor2VCX71ee-LVecAnE",
-    authDomain: "master-capture.firebaseapp.com",
-    databaseURL: "https://master-capture.firebaseio.com",
-    projectId: "master-capture",
-    storageBucket: "master-capture.appspot.com",
-    messagingSenderId: "493034871634",
-    appId: "1:493034871634:web:3546e8a2c0741b1779b88b",
-    measurementId: "G-L78QVCSWW9",
+    apiKey: "AIzaSyALcqqu9aCOXsV5JfA_laL5xQjUp3j3rTI",
+    authDomain: "master-clients.firebaseapp.com",
+    databaseURL: "https://master-clients.firebaseio.com",
+    projectId: "master-clients",
+    storageBucket: "master-clients.appspot.com",
+    messagingSenderId: "844618249232",
+    appId: "1:844618249232:web:9efbd858b033224475c695",
+    measurementId: "G-DXM1DW8BG3",
   })
   .analytics();
 

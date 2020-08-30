@@ -15,7 +15,7 @@ const App: FunctionComponent = (props) => {
     },
   };
   useEffect(() => {
-    return () => {
+    return () => { 
       //
     };
   }, []);
