@@ -1,6 +1,10 @@
-import { IServiceVente } from '../Others/IServiceVente';
+import { ICoutProduction } from "./ICoutProduction";
+import { ITaxe } from "./ITaxe";
 
-export interface IVenteService extends IServiceVente {
+export interface IVenteService {
     status: boolean,
-    date_vente: Date,
+    date_vente: number,
+    couts_production: ICoutProduction[],
+    taxes: ITaxe[],
+    prix_vente: number
 }

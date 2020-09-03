@@ -1,4 +1,4 @@
-import { IService } from './Client/IService';
+import { IService } from "./Client/IService";
 
 export interface IClient {
   date_creation: number;
@@ -8,5 +8,6 @@ export interface IClient {
   adresse: string;
   phone_number: string;
   services_client: IService[];
-  unclaimed: string
+  unclaimed: string;
+  id?: string;
 }

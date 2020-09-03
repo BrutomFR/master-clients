@@ -1,6 +1,7 @@
-import { IServiceProspection } from '../Others/IServiceProspection';
+import { ICoutProduction } from "./ICoutProduction";
 
-export interface IProspectionService extends IServiceProspection{
-  date_envoie: Date,
+export interface IProspectionService {
+  date_envoie: number,
   status: boolean,
+  couts_production: ICoutProduction[]
 }

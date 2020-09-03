@@ -13,6 +13,7 @@ import { IDashboard } from "./props";
 // tslint:disable-next-line:ordered-imports
 import { Layout, Menu } from "antd";
 import AjouterClients from "../AjouterClients/AjouterClients";
+import VoirClients from '../VoirClients/VoirClients';
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -72,6 +73,7 @@ const Dashboard: FunctionComponent<IDashboard> = (props) => {
           </Content>
         )}
         {pageShow === "Ajouter des clients" && <AjouterClients />}
+        {pageShow === "Voir les clients" && <VoirClients />}
 
         <Footer style={{ textAlign: "center" }}>
           Master Clients ©2020 Created by Brutom

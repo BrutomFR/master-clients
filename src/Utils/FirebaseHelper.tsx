@@ -20,17 +20,22 @@ export const db = firebase.firestore();
 export function GetClient() {
   return new Observable((sub) => {
     db.collection("clients").onSnapshot((o) => {
-      const s = o.docs.map((d) => {
-        return d.data();
-      });
-      sub.next(s);
+      sub.next(
+        o.docs.map((d) => {
+          return {
+            ...d.data(),
+            id: d.id,
+          };
+        })
+      );
     });
   });
 }
+export function UpdateClient(client: IClient) {
+  return db.collection("clients").doc(client.id).update(client);
+}
 
 export function UpdateClients(clients: IClient[]) {
-
-
   const batch: firebase.firestore.WriteBatch = db.batch();
   clients.forEach((doc) => {
     const docRef: firebase.firestore.DocumentReference<firebase.firestore.DocumentData> = db

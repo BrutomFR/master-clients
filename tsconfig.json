@@ -14,11 +14,10 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
-    "importHelpers": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
   },
   "exclude": [
     "node_modules",

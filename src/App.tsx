@@ -22,7 +22,10 @@ const App: FunctionComponent = (props) => {
     },
   };
   useEffect(() => {
-    FirebaseHelper.GetClient().subscribe((r: IClient[]) => setClients(r));
+    FirebaseHelper.GetClient().subscribe((r: IClient[]) => {
+      setClients(r);
+      console.log(r);
+    });
     return () => {
       //
     };
